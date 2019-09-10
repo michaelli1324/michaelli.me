@@ -1036,6 +1036,7 @@
 		max-width: 50em + $size-header-pad;
 		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
 		width: calc(100% - #{$size-header-width});
+		margin-left: 30%;
 
 		> section {
 			border-top: solid 2px _palette(border);
@@ -1301,10 +1302,88 @@
 			}
 
 			#main {
-				margin-left: $size-header-width;
-				max-width: none;
-				padding: 0 $size-header-pad 0 $size-header-pad;
+				max-width: 50em + $size-header-pad;
+				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
 				width: calc(100% - #{$size-header-width});
+				margin-left: 30%;
+		
+				> section {
+					border-top: solid 2px _palette(border);
+					padding: $size-header-pad 0;
+					
+					&:first-child {
+						border-top: 0;
+					}
+				}
+		
+				#one {
+					height: 100vh;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+		
+					.name {
+						font-weight: bold;
+					}
+		
+					.description-link {
+						border-bottom: 2px solid #353535;
+						color: inherit;
+						background-size: 100% 200%;
+						background-image: linear-gradient(to bottom, transparent 50%, #353535 50%);
+						transition: background-position 0.2s;
+						padding-right: 0;
+						font-style: unset;
+		
+						&:hover {
+							background-position: 0% 100%;
+							color: #f7f7f7;
+							font-weight: 300;
+						}
+					}
+		
+					.landing-description {
+						font-size: 18px;
+					}
+				}
+		
+				#two {
+					height: 100vh;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+		
+					.about-description {
+						font-size: 18px;
+					}
+				}
+		
+				#four {
+					height: 100vh;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+		
+					.contact-content {
+						display: flex;
+						flex-direction:column;
+						justify-content: center;
+						align-items: center;
+					}
+		
+					.contact-item {
+						font-size: 30px;
+						margin-bottom: 2rem;
+						margin-top: 0;
+						color: #000;
+					}
+				}
+		
+				#five {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
 			}
 
 	}
