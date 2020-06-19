@@ -1033,9 +1033,7 @@
 /* Main */
 
 	#main {
-		max-width: 50em + $size-header-pad;
 		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
-		width: calc(100% - #{$size-header-width});
 		margin-left: 30%;
 
 		> section {
@@ -1302,9 +1300,7 @@
 			}
 
 			#main {
-				max-width: 50em + $size-header-pad;
 				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
-				width: calc(100% - #{$size-header-width});
 				margin-left: 30%;
 		
 				> section {
@@ -1428,9 +1424,7 @@
 
 			#main {
 				margin-left: $size-header-width;
-				max-width: none;
 				padding: 0 $size-header-pad 0 $size-header-pad;
-				width: calc(100% - #{$size-header-width});
 			}
 
 	}

@@ -10,7 +10,7 @@ class Gallery extends Component {
 
         const gallery = images.map((obj, i) => {
             return (
-                <article className="6u 12u$(xsmall) work-item" key={i}>
+                <article className="4u 6u$(small) 12u$(xsmall) work-item" key={i}>
                     <a href={obj.link} target="_blank">
                         <div className="image" style={{
                             backgroundImage: `url(${obj.thumbnail})`,
