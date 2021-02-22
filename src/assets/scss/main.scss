@@ -1033,7 +1033,7 @@
 /* Main */
 
 	#main {
-		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+		padding: 0  $size-header-pad;
 		margin-left: 30%;
 
 		> section {
