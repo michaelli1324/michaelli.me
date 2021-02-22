@@ -25,4 +25,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Builds gatsby project
-        run: git subtree push --prefix public origin gh-pages
+        run: git subtree add public && git subtree push --prefix public origin gh-pages
