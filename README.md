@@ -1,2 +1,3 @@
-# My Personal Site
-Check out my personal site at www.michaelli.me
+# Michael's Personal Site
+
+[michaelli.me](https://www.michaelli.me/)
