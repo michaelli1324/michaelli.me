@@ -1,3 +1,3 @@
-# Michael's Personal Site
+# michaelli.me
 
-[michaelli.me](https://www.michaelli.me/)
+Inspired by [leerob.io](https://github.com/leerob/leerob.io/)
