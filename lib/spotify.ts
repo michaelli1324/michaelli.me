@@ -1,5 +1,5 @@
 import fetcher from '@lib/fetcher';
-import { SpotifyToken } from '@core/types/spotify';
+import { SpotifyToken } from '@core/types/SpotifyToken';
 
 const spotifyClientId = process.env.SPOTIFY_CLIENT_ID;
 const spotifyClientSecret = process.env.SPOTIFY_CLIENT_SECRET;

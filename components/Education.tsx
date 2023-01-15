@@ -1,6 +1,6 @@
 import Section from '@components/elements/Section';
 
-const About = () => {
+const Education = () => {
   return (
     <Section heading="🎓 Education">
       <p>
@@ -20,4 +20,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Education;
