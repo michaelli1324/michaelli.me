@@ -3,11 +3,10 @@ import Section from '@components/elements/Section';
 import fetcher from 'lib/fetcher';
 import useSWR from 'swr';
 import Image from 'next/image';
-import { TopTracks } from '@customTypes/spotify-types';
+import { TopTracks } from '@core/types/spotify';
 
 export default function Music() {
-  const response = useSWR('/api/top-tracks', fetcher);
-  const data = response.data as TopTracks;
+  const { data } = useSWR('/api/top-tracks', fetcher<TopTracks>);
 
   return (
     <Container>
