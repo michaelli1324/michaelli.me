@@ -41,7 +41,7 @@ export default function Container(props: ContainerProps) {
   const meta = {
     title: 'Michael Li',
     description: `Software Engineer, Frontend Developer`,
-    image: 'https://michaelli.me/static/images/michael.jpg',
+    image: 'https://michaelli.me/images/banner.jpg',
     type: 'website',
     ...customMeta,
   };
