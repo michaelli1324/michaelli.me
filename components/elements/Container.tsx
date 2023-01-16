@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import NextLink from 'next/link';
 import cn from 'classnames';
 import Header from '@components/Header';
+import MobileMenu from '@components/MobileMenu';
 
 interface NavItemProps {
   href: string;
@@ -72,7 +73,8 @@ export default function Container(props: ContainerProps) {
       </Head>
       <div className="flex flex-col justify-center max-w-5xl px-8 mx-auto">
         <nav className="relative flex items-center justify-center w-full max-w-2xl pt-8 pb-8 mx-auto text-gray-900 border-gray-200 bg-gray-50 bg-opacity-60 sm:pb-8">
-          <div>
+          <div className="ml-[-0.60rem] w-full md:block md:w-auto">
+            <MobileMenu />
             <NavItem href="/" text="Home" />
             <NavItem href="/music" text="Music" />
           </div>
