@@ -38,3 +38,16 @@ export const getTopTracks = async () => {
     }
   );
 };
+
+export const getCurrentlyPlaying = async () => {
+  const accessToken = await getAccessToken();
+
+  return await fetcher<SpotifyApi.CurrentlyPlayingResponse>(
+    'https://api.spotify.com/v1/me/player/currently-playing',
+    {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    }
+  );
+};

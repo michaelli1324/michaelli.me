@@ -1,14 +1,9 @@
+import CurrentlyPlaying from '@components/CurrentlyPlaying';
 import Container from '@components/elements/Container';
 import Section from '@components/elements/Section';
-import fetcher from 'lib/fetcher';
-import useSWR from 'swr';
-
-import TopMusic from '../components/TopTracks';
-import { TopTracks } from '@core/types/Track';
+import TopMusic from '@components/TopMusic';
 
 export default function Music() {
-  const { data, isLoading } = useSWR('/api/top-tracks', fetcher<TopTracks>);
-
   return (
     <Container>
       <Section heading="Music">
@@ -20,8 +15,11 @@ export default function Music() {
           and the Top Tracks I listened to recently.
         </p>
       </Section>
+      <Section heading="Currently Playing">
+        <CurrentlyPlaying />
+      </Section>
       <Section heading="Top Tracks in the Last Month">
-        <TopMusic tracks={data?.tracks} isLoading={isLoading} />
+        <TopMusic />
       </Section>
     </Container>
   );

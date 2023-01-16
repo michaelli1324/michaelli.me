@@ -8,15 +8,5 @@ export default async function handler(
 ) {
   const topTracks = await getTopTracks();
 
-  const tracks = TopTracksSchema.parse({
-    tracks: topTracks.items.map((track) => ({
-      artist: track.artists.map((artist) => artist.name).join(', '),
-      url: track.external_urls.spotify,
-      name: track.name,
-      id: track.id,
-      albumCover: track.album.images?.[0]?.url,
-    })),
-  });
-
-  return res.status(200).json(tracks);
+  return res.status(200).json(TopTracksSchema.parse(topTracks));
 }
