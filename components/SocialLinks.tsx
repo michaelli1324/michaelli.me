@@ -16,11 +16,6 @@ const socialLinks = [
     href: 'https://twitter.com/mili_wee',
     icon: FaTwitter,
   },
-  {
-    name: 'Website',
-    href: 'https://www.michaelli.me/',
-    icon: FaGlobe,
-  },
 ];
 
 const SocialLinks = () => {
