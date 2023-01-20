@@ -1,4 +1,4 @@
-import { TopTracks, TopTracksSchema } from '@core/types/Track';
+import { TopTracks, TopTracksSchema } from '@core/types/Spotify';
 import { getTopTracks } from 'lib/spotify';
 import type { NextApiRequest, NextApiResponse } from 'next';
 

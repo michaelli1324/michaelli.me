@@ -39,6 +39,19 @@ export const getTopTracks = async () => {
   );
 };
 
+export const getTopArtists = async () => {
+  const accessToken = await getAccessToken();
+
+  return await fetcher<SpotifyApi.UsersTopTracksResponse>(
+    'https://api.spotify.com/v1/me/top/artists?time_range=short_term&limit=10',
+    {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    }
+  );
+};
+
 export const getCurrentlyPlaying = async () => {
   const accessToken = await getAccessToken();
 

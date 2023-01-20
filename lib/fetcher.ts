@@ -2,16 +2,14 @@ const fetcher = async <T>(
   input: RequestInfo,
   init?: RequestInit
 ): Promise<T> => {
-  const res = await fetch(input, init);
-  if (res.status === 204 || res.status >= 400) {
-    throw new Error(
-      `${res.status}: An error occurred while fetching the data.`,
-      {
-        cause: await res.json(),
-      }
-    );
+  try {
+    const res = await fetch(input, init);
+    return await res.json();
+  } catch (error) {
+    throw new Error(`An error occurred while fetching the data.`, {
+      cause: error,
+    });
   }
-  return await res.json();
 };
 
 export default fetcher;

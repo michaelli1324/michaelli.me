@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getCurrentlyPlaying } from '@lib/spotify';
-import { CurrentlyPlaying, CurrentlyPlayingSchema } from '@core/types/Track';
+import { CurrentlyPlaying, CurrentlyPlayingSchema } from '@core/types/Spotify';
 
 export default async function handler(
   req: NextApiRequest,
