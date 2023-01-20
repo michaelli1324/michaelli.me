@@ -4,19 +4,20 @@ import fetcher from '@lib/fetcher';
 import MusicTrack from '@components/MusicTrack';
 import MusicArtist from '@components/MusicArtist';
 import { TopArtists } from '@core/types/Spotify';
-import { MusicType } from 'pages/music';
+import { MusicType, TimeRange } from '@lib/spotify';
 
 interface TopMusicProps {
   type: MusicType;
+  timeRange: TimeRange;
 }
 
-const TopMusic = ({ type }: TopMusicProps) => {
+const TopMusic = ({ type, timeRange }: TopMusicProps) => {
   const { data: topTracks, isLoading: isTopTracksLoading } = useSWR(
-    '/api/top-tracks',
+    `/api/top-tracks?time_range=${timeRange}`,
     fetcher<TopTracks>
   );
   const { data: topArtists, isLoading: isTopArtistsLoading } = useSWR(
-    '/api/top-artists',
+    `/api/top-artists?time_range=${timeRange}`,
     fetcher<TopArtists>
   );
 

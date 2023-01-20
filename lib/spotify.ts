@@ -5,6 +5,9 @@ const spotifyClientId = process.env.SPOTIFY_CLIENT_ID;
 const spotifyClientSecret = process.env.SPOTIFY_CLIENT_SECRET;
 const spotifyRefreshToken = process.env.SPOTIFY_REFRESH_TOKEN;
 
+export type MusicType = 'artists' | 'tracks';
+export type TimeRange = 'short_term' | 'medium_term' | 'long_term';
+
 export const getAccessToken = async () => {
   const { access_token } = await fetcher<SpotifyToken>(
     'https://accounts.spotify.com/api/token',
@@ -26,11 +29,11 @@ export const getAccessToken = async () => {
   return access_token;
 };
 
-export const getTopTracks = async () => {
+export const getTopTracks = async (timeRange: TimeRange) => {
   const accessToken = await getAccessToken();
 
   return await fetcher<SpotifyApi.UsersTopTracksResponse>(
-    'https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=10',
+    `https://api.spotify.com/v1/me/top/tracks?time_range=${timeRange}&limit=10`,
     {
       headers: {
         Authorization: `Bearer ${accessToken}`,
@@ -39,11 +42,11 @@ export const getTopTracks = async () => {
   );
 };
 
-export const getTopArtists = async () => {
+export const getTopArtists = async (timeRange: TimeRange) => {
   const accessToken = await getAccessToken();
 
   return await fetcher<SpotifyApi.UsersTopTracksResponse>(
-    'https://api.spotify.com/v1/me/top/artists?time_range=short_term&limit=10',
+    `https://api.spotify.com/v1/me/top/artists?time_range=${timeRange}&limit=10`,
     {
       headers: {
         Authorization: `Bearer ${accessToken}`,
