@@ -39,7 +39,7 @@ const light: ColorScheme = {
       foreground: colors.gray['100'],
       muted: colors.gray['300'],
     },
-    primary: colors.teal,
+    primary: colors.green,
     neutral: colors.gray,
   },
 };

@@ -71,8 +71,8 @@ export default function Container(props: ContainerProps) {
           <meta property="article:published_time" content={meta?.date} />
         )}
       </Head>
-      <div className="flex flex-col justify-center max-w-5xl px-8 mx-auto">
-        <nav className="relative flex items-center justify-center w-full max-w-2xl pt-8 pb-8 mx-auto text-gray-900 border-gray-200 bg-gray-50 bg-opacity-60 sm:pb-8">
+      <div className="mx-auto flex max-w-5xl flex-col justify-center px-8">
+        <nav className="relative mx-auto flex w-full max-w-2xl items-center justify-center border-gray-200 bg-gray-50 bg-opacity-60 pt-8 pb-8 text-gray-900 sm:pb-8">
           <div className="ml-[-0.60rem] w-full md:block md:w-auto">
             <MobileMenu />
             <NavItem href="/" text="Home" />

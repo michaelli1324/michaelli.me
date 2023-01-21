@@ -3,7 +3,7 @@ import Container from '@components/elements/Container';
 import Section from '@components/elements/Section';
 import TopMusic from '@components/TopMusic';
 import { Fragment, useState } from 'react';
-import { Button } from '@vechaiui/react';
+import Button from '@components/elements/Button';
 import { MusicType, TimeRange } from '@lib/spotify';
 import { Listbox, Transition } from '@headlessui/react';
 
@@ -43,6 +43,7 @@ export default function Music() {
             <p className="mb-2 text-sm font-bold">Type: </p>
             <div className="flex flex-row space-x-2">
               <Button
+                className="without-ring"
                 color={type === 'tracks' ? 'primary' : undefined}
                 onClick={() => setType('tracks')}
                 active={type === 'tracks'}
@@ -50,6 +51,7 @@ export default function Music() {
                 Tracks
               </Button>
               <Button
+                className="without-ring"
                 color={type === 'artists' ? 'primary' : undefined}
                 onClick={() => setType('artists')}
                 active={type === 'artists'}
@@ -63,7 +65,7 @@ export default function Music() {
             <div className="w-48">
               <Listbox value={timeRangeOption} onChange={setTimeRangeOption}>
                 <div className="relative">
-                  <Listbox.Button className="relative w-full py-2 pl-3 pr-10 text-left bg-white rounded-lg shadow-md cursor-default focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+                  <Listbox.Button className="relative w-full py-2 pl-3 pr-10 text-left bg-white rounded-lg cursor-default without-ring outline- btn-outline focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
                     <span className="block truncate">
                       {timeRangeOption.name}
                     </span>
@@ -81,7 +83,7 @@ export default function Music() {
                           className={({ active }) =>
                             `relative cursor-default select-none py-2 pl-4 pr-4 ${
                               active
-                                ? 'bg-green-100 text-green-900'
+                                ? 'bg-green-50 text-green-600'
                                 : 'text-gray-900'
                             }`
                           }
