@@ -1,11 +1,5 @@
 import { useState } from 'react';
-import NextLink from 'next/link';
 import Nav from './Nav';
-
-interface MobileNavItemProps {
-  href: string;
-  text: string;
-}
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

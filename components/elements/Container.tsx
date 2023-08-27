@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Header from '@components/Header';
 import MobileMenu from '@components/MobileMenu';
 import Nav from '@components/Nav';
 

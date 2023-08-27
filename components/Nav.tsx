@@ -21,9 +21,13 @@ interface NavProps {
 }
 
 const Nav = ({ isMobile }: NavProps) => {
-  return NavItems.map(({ href, text }) => (
-    <NavItem href={href} text={text} isMobile={isMobile} />
-  ));
+  return <>
+    {
+      NavItems.map(({ href, text }) => (
+        <NavItem key={href} href={href} text={text} isMobile={isMobile} />
+      ))
+    }
+  </>
 }
 
 export default Nav;
