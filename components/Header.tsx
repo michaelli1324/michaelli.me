@@ -12,7 +12,7 @@ const Header = () => {
         className="mb-8 rounded-full"
       />
       <div className="mb-8">
-        <h1 className="mb-2 text-2xl font-bold tracking-tight text-center text-black md:text-3xl">
+        <h1 className="mb-2 text-2xl font-bold text-center text-black md:text-3xl">
           Michael Li
         </h1>
         <h2 className="text-lg text-gray-500">Software Engineer at Glean</h2>

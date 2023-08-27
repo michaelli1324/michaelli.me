@@ -1,13 +1,12 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { Source_Sans_Pro } from '@next/font/google';
+import { Inter } from '@next/font/google';
 import { VechaiProvider } from '@vechaiui/react';
 import { ColorScheme, extendTheme, colors } from '@vechaiui/react';
 
-const sourceSansPro = Source_Sans_Pro({
-  weight: ['400', '700'],
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-source-sans-pro',
+  variable: '--font-inter',
 });
 
 const cool: ColorScheme = {
@@ -54,7 +53,7 @@ const theme = extendTheme({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <VechaiProvider theme={theme} colorScheme="light">
-      <main className={`${sourceSansPro.className} font-source-sans-pro`}>
+      <main className={`${inter.className}`}>
         <Component {...pageProps} />
       </main>
     </VechaiProvider>

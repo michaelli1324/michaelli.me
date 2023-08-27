@@ -38,7 +38,7 @@ const pastJobs = [
 
 const Experience = () => {
   return (
-    <Section heading="💼 Experience">
+    <Section heading="Experience">
       {pastJobs.map((job) => (
         <div className="flex flex-row mb-8" key={job.company}>
           <Image

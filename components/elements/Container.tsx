@@ -40,7 +40,7 @@ export default function Container(props: ContainerProps) {
 
   const meta = {
     title: 'Michael Li',
-    description: `Software Engineer, Frontend Developer`,
+    description: `Software Engineer`,
     image: 'https://michaelli.me/images/banner.jpg',
     type: 'website',
     ...customMeta,
@@ -71,12 +71,11 @@ export default function Container(props: ContainerProps) {
           <meta property="article:published_time" content={meta?.date} />
         )}
       </Head>
-      <div className="mx-auto flex max-w-5xl flex-col justify-center px-8">
-        <nav className="relative mx-auto flex w-full max-w-2xl items-center justify-center border-gray-200 bg-gray-50 bg-opacity-60 pt-8 pb-8 text-gray-900 sm:pb-8">
+      <div className="mx-auto flex max-w-3xl flex-col justify-center px-8">
+        <nav className="relative flex justify-flex-start w-full max-w-2xl items-center border-gray-200 bg-gray-50 bg-opacity-60 pt-8 pb-8 text-gray-900 sm:pb-8">
           <div className="ml-[-0.60rem] w-full md:block md:w-auto">
             <MobileMenu />
             <NavItem href="/" text="Home" />
-            <NavItem href="/music" text="Music" />
           </div>
         </nav>
         <Header />

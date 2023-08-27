@@ -2,7 +2,7 @@ import Section from '@components/elements/Section';
 
 const Education = () => {
   return (
-    <Section heading="🎓 Education">
+    <Section heading="Education">
       <p>
         Graduated from UC Berkeley&apos;s&nbsp;
         <a

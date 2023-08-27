@@ -13,7 +13,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-source-sans-pro)', ...fontFamily.sans],
+        sans: ['var(--font-inter)', ...fontFamily.sans],
+        serif: ['var(--font-inter)', ...fontFamily.serif],
+        mono: ['var(--font-inter)', ...fontFamily.mono],
       },
     },
   },
