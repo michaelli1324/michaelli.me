@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Section from '@components/elements/Section';
 
-const IMAGE_WIDTH = 100;
-const IMAGE_HEIGHT = 100;
+const IMAGE_WIDTH = 80;
+const IMAGE_HEIGHT = 80;
 
 const pastJobs = [
   {
@@ -49,9 +49,9 @@ const Experience = () => {
             height={IMAGE_HEIGHT}
           />
           <div className="flex flex-col justify-center ml-8">
-            <h4 className="text-xl font-bold">{job.company}</h4>
-            <h5 className="text-lg font-semibold">{job.title}</h5>
-            <p className="text-gray-500">
+            <h4 className="text-lg font-semibold">{job.company}</h4>
+            <h5 className="text-base font-medium">{job.title}</h5>
+            <p className="text-sm text-gray-500">
               {job.start} - {job.end}
             </p>
           </div>

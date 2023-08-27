@@ -1,31 +1,8 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import NextLink from 'next/link';
-import cn from 'classnames';
 import Header from '@components/Header';
 import MobileMenu from '@components/MobileMenu';
-
-interface NavItemProps {
-  href: string;
-  text: string;
-}
-
-function NavItem({ href, text }: NavItemProps) {
-  const router = useRouter();
-  const isActive = router.asPath === href;
-
-  return (
-    <NextLink
-      href={href}
-      className={cn(
-        isActive ? 'font-semibold text-gray-800' : 'font-normal text-gray-600',
-        'hidden rounded-lg p-1 transition-all hover:bg-gray-200 sm:px-3 sm:py-2  md:inline-block'
-      )}
-    >
-      <span className="capsize">{text}</span>
-    </NextLink>
-  );
-}
+import Nav from '@components/Nav';
 
 interface ContainerProps {
   children?: React.ReactNode;
@@ -47,7 +24,7 @@ export default function Container(props: ContainerProps) {
   };
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 min-h-screen">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -75,10 +52,9 @@ export default function Container(props: ContainerProps) {
         <nav className="relative flex justify-flex-start w-full max-w-2xl items-center border-gray-200 bg-gray-50 bg-opacity-60 pt-8 pb-8 text-gray-900 sm:pb-8">
           <div className="ml-[-0.60rem] w-full md:block md:w-auto">
             <MobileMenu />
-            <NavItem href="/" text="Home" />
+            <Nav />
           </div>
         </nav>
-        <Header />
         {children}
         <div id="footer" />
       </div>

@@ -1,14 +1,12 @@
 import Container from '@components/elements/Container';
-import Experience from '@components/Experience';
 import About from '@components/About';
-import Education from '@components/Education';
+import Header from '@components/Header';
 
 export default function Home() {
   return (
     <Container>
+      <Header />
       <About />
-      <Experience />
-      <Education />
     </Container>
   );
 }

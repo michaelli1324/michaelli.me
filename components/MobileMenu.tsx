@@ -1,25 +1,11 @@
 import { useState } from 'react';
 import NextLink from 'next/link';
+import Nav from './Nav';
 
 interface MobileNavItemProps {
   href: string;
   text: string;
 }
-
-const MobileNavItem = ({ href, text }: MobileNavItemProps) => {
-  return (
-    <li className="w-full py-4 font-semibold text-gray-900 border-b border-gray-300 text-md">
-      <NextLink
-        href={href}
-        className={
-          'rounded-lg p-1 font-normal text-gray-600 sm:px-3 sm:py-2  md:inline-block'
-        }
-      >
-        <span className="capsize">{text}</span>
-      </NextLink>
-    </li>
-  );
-};
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,8 +25,7 @@ const MobileMenu = () => {
       </button>
       {isOpen && (
         <ul className="absolute z-50 flex flex-col w-full h-screen px-8 pt-8 bg-gray-50">
-          <MobileNavItem href="/" text="Home" />
-          <MobileNavItem href="/music" text="Music" />
+          <Nav isMobile />
         </ul>
       )}
     </>
