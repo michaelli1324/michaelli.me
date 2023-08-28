@@ -1,6 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import Section from '@components/elements/Section';
+import gleanLogo from '@public/images/glean.jpg';
+import metaLogo from '@public/images/meta.png';
+import facebookLogo from '@public/images/facebook.png';
+import awsLogo from '@public/images/aws.jpg';
 
 const IMAGE_WIDTH = 80;
 const IMAGE_HEIGHT = 80;
@@ -8,28 +12,28 @@ const IMAGE_HEIGHT = 80;
 const pastJobs = [
   {
     company: 'Glean',
-    companyLogo: '/images/glean.jpg',
+    companyLogo: gleanLogo,
     title: 'Software Engineer',
     start: 'May 2022',
     end: 'Present',
   },
   {
     company: 'Meta',
-    companyLogo: '/images/meta.png',
+    companyLogo: metaLogo,
     title: 'Software Engineer',
     start: 'Feb 2021',
     end: 'May 2022',
   },
   {
     company: 'Facebook',
-    companyLogo: '/images/facebook.png',
+    companyLogo: facebookLogo,
     title: 'Software Engineer Intern',
     start: 'Jun 2020',
     end: 'Aug 2020',
   },
   {
     company: 'Amazon AWS',
-    companyLogo: '/images/aws.jpg',
+    companyLogo: awsLogo,
     title: 'Software Engineer Intern',
     start: 'Jun 2019',
     end: 'Aug 2019',
