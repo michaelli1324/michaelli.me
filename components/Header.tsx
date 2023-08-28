@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import SocialLinks from '@components/SocialLinks';
+import headerImage from '@public/images/michael1.jpg';
 
 const Header = () => {
   return (
     <div className="flex flex-col items-center">
       <Image
-        src="/images/michael1.jpg"
+        src={headerImage}
         alt="Michael Li"
         width={200}
         height={200}
