@@ -1,3 +1,4 @@
+import { isDevelopment } from "@lib/environment";
 import NavItem from "./elements/NavItem";
 
 type NavItem = {
@@ -13,6 +14,10 @@ const NavItems = [
   {
     href: '/about',
     text: 'About',
+  },
+  {
+    href: '/posts',
+    text: 'Posts',
   },
 ] as NavItem[];
 
