@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import MiliText from '@components/MiliText';
 import SocialLinks from '@components/SocialLinks';
 import headerImage1 from '@public/images/michael1.jpg';
 import headerImage2 from '@public/images/michael2.jpg';
@@ -31,10 +32,10 @@ const Header = () => {
         />
       </div>
       <div className="mb-8">
-        <h1 className="mb-2 text-2xl font-bold text-center text-black md:text-3xl">
-          Michael Li
+        <h1 className="mb-2 text-center text-2xl font-bold text-black md:text-3xl">
+          <MiliText text="Michael Li" />
         </h1>
-        <h2 className="text-lg text-gray-500">Software Engineer @ Glean</h2>
+        <h2 className="text-lg text-gray-500">Software Engineer @ <a className="text-blue-600 underline hover:text-blue-800" href="https://glean.com">Glean</a></h2>
         <SocialLinks />
       </div>
     </div>
