@@ -26,13 +26,13 @@ interface NavProps {
 }
 
 const Nav = ({ isMobile }: NavProps) => {
-  return <>
+  return <div className="flex flex-row justify-center">
     {
       NavItems.map(({ href, text }) => (
         <NavItem key={href} href={href} text={text} isMobile={isMobile} />
       ))
     }
-  </>
+  </div>
 }
 
 export default Nav;

@@ -48,8 +48,8 @@ export default function Container(props: ContainerProps) {
         )}
       </Head>
       <div className="mx-auto flex max-w-3xl flex-col justify-center px-8">
-        <nav className="relative flex justify-flex-start w-full max-w-2xl items-center border-gray-200 bg-gray-50 bg-opacity-60 pt-8 pb-8 text-gray-900 sm:pb-8">
-          <div className="ml-[-0.60rem] w-full md:block md:w-auto">
+        <nav className="relative flex justify-center w-full items-center border-gray-200 bg-gray-50 bg-opacity-60 pt-8 pb-8 text-gray-900">
+          <div className="ml-[-0.60rem] w-full md:block md:w-auto justify-center flex flex-row">
             <MobileMenu />
             <Nav />
           </div>

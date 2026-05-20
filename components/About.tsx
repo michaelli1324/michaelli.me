@@ -1,9 +1,16 @@
-const About = () => (
-  <p className="whitespace-pre-line">
-    {`Hi there! I'm glad to see you've stumbled upon my little corner of the internet. I use this site as an online resume, blog, and creative outlet all in one.
+import MiliText from '@components/MiliText';
 
-    I am always open to connecting with new people over shared interests, so please don't hesitate to `}<a className="text-sky-600" href="mailto:michael.li1324@gmail.com">get in touch</a>{` if you'd like to collaborate on a project or meet up for coffee.`}
-  </p>
+const About = () => (
+  <div className="flex flex-col items-center">
+    <div className="mb-4 flex flex-col gap-0 whitespace-pre-line text-center">
+      <span className="block">Hi I am Michael</span>
+      <span className="block">
+        I also go by <MiliText text="mili" className="font-bold" />
+      </span>
+      <span className="block">Welcome to my site</span>
+    </div>
+    <div className="italic">- famous poet</div>
+  </div>
 );
 
 export default About;
