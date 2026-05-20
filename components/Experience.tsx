@@ -51,6 +51,7 @@ const Experience = () => {
             alt={job.company}
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
+            placeholder="blur"
           />
           <div className="flex flex-col justify-center ml-8">
             <h4 className="text-lg font-semibold">{job.company}</h4>
