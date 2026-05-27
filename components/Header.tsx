@@ -8,17 +8,12 @@ import headerImage4 from '@public/images/michael4.jpg';
 
 const headerImages = [headerImage1, headerImage2, headerImage3, headerImage4];
 
-const getImageOfTheDay = () => {
-  const today = new Date();
-  const dayOfYear = Math.floor(
-    (today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) /
-      (1000 * 60 * 60 * 24)
-  );
-  return headerImages[dayOfYear % headerImages.length];
-};
+interface HeaderProps {
+  dayOfYear: number;
+}
 
-const Header = () => {
-  const headerImage = getImageOfTheDay();
+const Header = ({ dayOfYear }: HeaderProps) => {
+  const headerImage = headerImages[dayOfYear % headerImages.length];
 
   return (
     <div className="flex flex-col items-center">
