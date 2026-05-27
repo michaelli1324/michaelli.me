@@ -1,5 +1,9 @@
 import Container from "@components/elements/Container";
-import distanceToNow from "@lib/dateRelative";
+import StepsChart from "@components/StepsChart";
+import VO2MaxChart from "@components/VO2MaxChart";
+import CaloriesChart from "@components/CaloriesChart";
+
+import { format } from "date-fns";
 import markdownToHtml from "@lib/markdownToHtml";
 import { PostData, getAllPosts, getPostData } from "@lib/posts";
 import { InferGetStaticPropsType } from "next";
@@ -18,14 +22,25 @@ const Post = ({ post }: InferGetStaticPropsType<typeof getStaticProps>) => {
             <p className="mt-2 text-xl">{post.excerpt}</p>
           ) : null}
           <time className="flex mt-2 text-gray-400">
-            {distanceToNow(new Date(post.date))}
+            {format(new Date(post.date + "T00:00:00"), "MMMM d, yyyy")}
           </time>
         </header>
 
         <div
-          className="prose mt-10"
+          className="prose mt-4"
           dangerouslySetInnerHTML={{ __html: post.content || '' }}
         />
+
+        {post.id === 'i-walked-20000-steps-a-day-for-3-months' && (
+          <>
+            <h3 className="text-xl font-bold mt-10">Step Counts</h3>
+            <StepsChart />
+            <h3 className="text-xl font-bold mt-10">VO2 Max</h3>
+            <VO2MaxChart />
+            <h3 className="text-xl font-bold mt-10">Daily Calories Burned</h3>
+            <CaloriesChart />
+          </>
+        )}
       </article>
     </Container>
   )
