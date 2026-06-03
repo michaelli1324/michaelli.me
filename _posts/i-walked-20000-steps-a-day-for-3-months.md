@@ -5,23 +5,20 @@ date: '2024-04-14'
 
 ## Introduction ##
 
-It was the turn of a new year (2024). The past year I had spent way too much time sitting at the desk, and it was starting to weight on me (quite literally). So I did what everybody does and got an Ozempic subscription to shed all the weight.  
+At the start of 2024, health was on my mind. I had spent the last few years living a mostly sedentary lifestyle, and even though I was putting time in at the gym, my priority was focused on muscle growth, and not cardiovascular health. I was falling into the trap of being an "active couch potato" - despite spending time exercising, I still spent most of my day sitting when working, commuting, or just relaxing at home. Paradoxically, all this sitting was causing me to feel even more fatigued on the daily.
 
-Just kidding.  
+With this weighing on my mind (and my belly), I was determined to make this the year that I made being active my new "default". Now many people make the commitment to walk 10,000 steps a year, but it wouldn't really be challenge if everybody could do it, would it? Everybody knows that real growth requires a bit of struggle, so I decided to double it - 20,000 steps a day. I decided to timebox this particular experiment a bit to just the first 3 months of the year, as I wasn't sure how big of a time commitment this would end up being, but wanted to give it an extended period to really see the effects it was having on my overall health.
 
-Instead, I made a New Years' resolution to touch some grass and walk 10,000 steps every day. I'm usually one to be pragmatic when it comes to goal setting. My job requires I work at an office desk in front of a computer for most of the day, so realistically I would be setting aside time outside of that to be able to walk every day. With a blood pact drawn, I set out walking.
+So that's how I landed on my mission to **walk 20,000 steps every day for the next 3 months**.
 
-But things were going quite well the first week - so much so that I felt like I wasn't even being challenged. And what's the point of setting goals without a little struggle? I figured "why not just double it?"
+In hindsight, 20,000 steps a day was quite a lot, especially for someone who works a desk job. This experience was quite brutal in the beginning - early on I wasn't the greatest at budgeting my steps throughout the day, and I would end up spending hours at night to compensate for it. And even when I felt like I physically couldn't get out of bed due to how tired my legs were, I grit my teeth and continued to walk like I was Sisyphus himself. 
 
-And that's how I landed on my mission to **walk 20,000 steps every day for the next 3 months**.
-
-This was quite bizarre in hindsight, but I learned quite a bit about discipline, goals, habits, fitness, and nutrition during this 3 month period, so I wanted to share a list of 20 things I learned while attempting this.
+And after it all, I'm quite glad I was able to keep up with it (for the most part). The whole experience taught me quite a bit about discipline, goals, habits, fitness, nutrition, and just the joys of experiencing the smaller things in life. To commemorate, I wrote everything that I learned during this time into 20 lessons. Even if it seems trivial, I hope this will continue to serve as an inspiration to myself (and anyone else reading) that you can truly make anything happen in this life with enough dedication. 
 
 ## 20 Lessons from 20,000 steps a Day ##
-
-1. **Define your routine:** Set a clear goal to help define a routine that works for you.
-2. **Quantify progress:** It sounds corny, but SMART goals help quantify your progress.
-3. **Build discipline:** Build a disciplined mindset – consistency is everything.
+1. **Define a routine:** Early on, I would often skip my morning walks, and this ended up being a punishment later that evening when I had to walk for 4 hour straight to meet my numbers. Once I had establish a more balanced schedule with my steps more evenly distributed across a 3 time periods every day, I had a much easier time meeting my commitment
+2. **Quantify progress:** Having a [SMART goal](https://en.wikipedia.org/wiki/SMART_criteria) really helped me conceptualize what success looked like, and helped me evalute how I was doing to meeting my objectives
+3. **Build discipline:** Build a disciplined mindset – consistency is everything
 4. **Be patient:** Remember that building a lasting habit takes time, so be patient and kind to yourself throughout the process.
 5. **Give yourself grace:** Account for a few missed days here and there. Vacations come up, or there are just days when you can’t hit the goal. Remember that every day is a new day, and don’t let a couple of missed days ruin the routine you’ve been building.
 6. **Celebrate small wins:** Set smaller, achievable milestones to keep yourself motivated and celebrate your progress.
@@ -40,7 +37,7 @@ This was quite bizarre in hindsight, but I learned quite a bit about discipline,
 19. **Manage your energy expenditure:** TDEE (Total Daily Energy Expenditure) is a measure of your body’s total energy expenditure throughout the day. This will likely increase as you become more active, and you should adjust how much you eat on a daily basis based on this. You’ll burn a lot of extra calories—walking 20,000 steps can burn up to ~800 extra calories per day (subject to change based on body composition). Make sure that you eat to compensate for that, or you’ll find yourself naturally losing weight.
 20. **Incorporate strength:** If building up muscular strength is also important to you, try to find outdoor calisthenics equipment at your local park. Many have the proper equipment for you to do pull-ups, push-ups, curl-ups, and dips for full-body workouts.
 
-P.S. Don’t go on any extreme diets while attempting this. (Ask me for the story)
+P.S. Don’t go on any extreme diets while attempting this. You might end up with scurvy.
 
 
 ## Metrics ##
