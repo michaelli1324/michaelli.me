@@ -7,6 +7,8 @@ import headerImage3 from '@public/images/michael3.jpg';
 import headerImage4 from '@public/images/michael4.jpg';
 
 const headerImages = [headerImage1, headerImage2, headerImage3, headerImage4];
+const contactNote =
+  'If you really want to get in touch with me, send me a watermelon.';
 
 interface HeaderProps {
   dayOfYear: number;
@@ -30,7 +32,18 @@ const Header = ({ dayOfYear }: HeaderProps) => {
         <h1 className="mb-2 text-center text-2xl font-bold text-black md:text-3xl">
           <MiliText text="Michael Li" />
         </h1>
-        <h2 className="text-lg text-gray-500">Software Engineer @ <a className="text-blue-600 underline hover:text-blue-800" href="https://glean.com">Glean</a></h2>
+        <h2 className="text-center text-lg text-gray-500">
+          Software Engineer @{' '}
+          <a
+            className="text-blue-600 underline hover:text-blue-800"
+            href="https://glean.com"
+          >
+            Glean
+          </a>
+        </h2>
+        <p className="mt-1 whitespace-nowrap text-center text-xs italic text-gray-400">
+          {contactNote}
+        </p>
         <SocialLinks />
       </div>
     </div>
